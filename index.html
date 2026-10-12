@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10223a">
+  <meta name="description" content="Resultados, calendario y clasificación de la Liga de Futsal de Placetas, Cuba.">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Liga de Futsal de Placetas</title>
+</head>
+<body>
+<header class="top">
+  <div class="crest">⚽</div>
+  <div><p class="eyebrow">CUBA · VILLA CLARA</p><h1>Liga de Futsal<br>de Placetas</h1></div>
+  <span id="net" class="net">● En línea</span>
+</header>
+<main>
+  <section class="hero">
+    <p class="eyebrow">TEMPORADA</p>
+    <h2>Copa de Invierno 2026</h2>
+    <p>La casa del futsal placeteño</p>
+  </section>
+  <nav class="tabs" aria-label="Secciones">
+    <button class="tab active" data-tab="inicio">Inicio</button>
+    <button class="tab" data-tab="partidos">Partidos</button>
+    <button class="tab" data-tab="tabla">Clasificación</button>
+    <button class="tab" data-tab="equipos">Equipos</button>
+    <button class="tab" data-tab="admin">Admin</button>
+  </nav>
+  <section id="view" aria-live="polite"></section>
+  <p class="foot">Prototipo inicial · Los datos de ejemplo no son resultados oficiales.</p>
+</main>
+<script src="./app.js"></script>
+<script>
+if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(()=>{}));
+}
+</script>
+</body>
+</html>
