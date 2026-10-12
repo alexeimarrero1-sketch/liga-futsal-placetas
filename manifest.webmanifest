@@ -1,0 +1,15 @@
+{
+  "name": "Liga de Futsal de Placetas",
+  "short_name": "Futsal Placetas",
+  "description": "Resultados, clasificación y noticias de la Liga de Futsal de Placetas, Cuba.",
+  "lang": "es-CU",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f2f5f9",
+  "theme_color": "#10223a",
+  "icons": [
+    {"src":"./icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"./icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"}
+  ]
+}
